@@ -39,3 +39,12 @@ const setPokemon = (pokemon) => {
     let weightPokemon = infoPokemon.getElementsByTagName("span")[11];
     weightPokemon.textContent = pokemon.weight + 'Kg';
 }
+
+function withBorder(x) {
+    x.style.border = `1px solid`;
+    x.style.borderRadius = "25%";
+    x.style.borderColor = 'peru'
+}
+function withoutBorder(x) {
+    x.style.border = 'none';
+}
